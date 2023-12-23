@@ -80,7 +80,7 @@ namespace Ogxd.ProjectCurator
 
             foreach (var referencer in referencers) {
                 AssetInfo refInfo = ProjectCurator.GetAsset(referencer);
-                if (refInfo.IsIncludedInBuild) {
+                if (refInfo != null && refInfo.IsIncludedInBuild) {
                     return IncludedInBuild.Referenced;
                 }
             }
