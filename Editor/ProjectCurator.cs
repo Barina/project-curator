@@ -73,7 +73,7 @@ namespace Ogxd.ProjectCurator
                             referencerAssetInfo.ClearIncludedStatus();
                         } else {
                             // Non-Reciprocity Error
-                            Warn($"Asset '{FormatGuid(referencer)}' that depends on '{FormatGuid(guid)}' doesn't have it as a dependency");
+                            // Warn($"Asset '{FormatGuid(referencer)}' that depends on '{FormatGuid(guid)}' doesn't have it as a dependency");
                         }
                     } else {
                         Warn($"Asset '{FormatGuid(referencer)}' that depends on '{FormatGuid(guid)}' is not present in the database");
